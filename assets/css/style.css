@@ -1055,10 +1055,6 @@ input:focus~ .box #bottom {
 }
 
 
-
-
-
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -1113,14 +1109,14 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Cliens
+# Partners
 --------------------------------------------------------------*/
-.cliens {
+.partners {
   padding: 12px 0;
   text-align: center;
 }
 
-.cliens img {
+.partners img {
   max-width: 55%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
@@ -1128,13 +1124,13 @@ section {
   filter: grayscale(100);
 }
 
-.cliens img:hover {
+.partners img:hover {
   filter: none;
-  transform: scale(2.1);
+  transform: scale(1.5);
 }
 
 @media (max-width: 768px) {
-  .cliens img {
+  .partners img {
     max-width: 40%;
   }
 }
