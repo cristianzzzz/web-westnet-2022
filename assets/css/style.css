@@ -453,7 +453,7 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
 
 
 /*--------------------------------------------------------------
-# Efectos LOCOS
+# FX & Animations
 --------------------------------------------------------------*/
 @font-face {
   src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
@@ -515,160 +515,6 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
     font-size: 90px;
   }
 }
-
-
-
-/*--------------------------------------------------------------
-# CUBO
---------------------------------------------------------------*/
-/* .conteiner {
-  height: 60vh;
-  width: 30vw;
-  position: absolute;
-  top: 27vh;
-  left: 30vw;
-  transform: translate(-50%, -50%);
-  perspective: 1000px
-}
-.conteiner {
-  height: 60vh;
-  width: 30vw;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  perspective: 1000px
-}
-
-.box {
-  height: 250px;
-  width: 250px;
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  transform: rotate(-90deg);
-  transform-style: preserve-3d;
-  animation: animate 3s infinite;
-
-}
-
-@keyframes animate {
-  0% {
-    transform: rotateX(45deg) rotateY(-45deg);
-  }
-  25% {
-    transform: rotateX(-45deg) rotateY(-45deg);
-  }
-  50% {
-    transform: rotateX(45deg) rotateY(45deg);
-  }
-  75% {
-    transform: rotateX(-45deg) rotateY(-45deg);
-  }
-  100% {
-    transform: rotateX(45deg) rotateY(-45deg);
-  }
-}
-
-.card {
-  height: 250px;
-  width: 250px;
-  text-align: center;
-  padding: 100px 0px;
-  color: white;
-  background: #EE396D;
-  border: 4px solid whitesmoke;
-  font-size: 32px;
-  box-sizing: border-box;
-  position: absolute;
-  transition: all 1s;
-  color: #fff;
-  text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #bc13fe,
-    0 0 82px #bc13fe,
-    0 0 92px #bc13fe,
-    0 0 102px #bc13fe,
-    0 0 151px #bc13fe;
-}
-
-.card {
-  box-shadow:
-    inset 0 0 50px #fff,
-    inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff,
-    inset 20px 0 300px #f0f,
-    inset -20px 0 300px #0ff,
-    0 0 50px #fff,
-    -10px 0 80px #f0f,
-    10px 0 80px #0ff;
-}
-
-#front {
-  transform: translateZ(125px);
-}
-#back {
-  transform: translateZ(-125px);
-}
-
-#left {
-  right: 125px;
-  transform: rotateY(-90deg);
-}
-#right {
-  left: 125px;
-  transform: rotateY(90deg);
-}
-#top {
-  bottom: 125px;
-  transform: rotateX(90deg);
-}
-#bottom {
-  top: 125px;
-  transform: rotateX(-90deg);
-}
-
-input{
-  height: 50px;
-  width: 100px;
-  cursor: pointer;
-
-}
-
-input:focus~ .box #front {
-  transform: translateZ(180px) rotateY(360deg);
-}
-input:focus~ .box #back {
-  transform: translateZ(-180px) rotateY(360deg);
-}
-input:focus~ .box #left {
-  right: 180px;
-}
-input:focus~ .box #right {
-  left: 180px;
-}
-input:focus~ .box #top {
-  bottom: 180px;
-}
-input:focus~ .box #bottom {
-  top: 180px;
-}
-
-.intro,
-.intro a{
-  color:#fff;
-  font-family:
-}
-/* customizable snowflake styling */
-.snowflake {
-  color: #fff;
-  font-size: 1em;
-  font-family: Arial;
-  text-shadow: 0 0 1px #000;
-}
-
- @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
- */
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -916,7 +762,7 @@ input:focus~ .box #bottom {
 #hero {
   width: 100%;
   height: 80vh;
-	background: linear-gradient(45deg, #EE396D, rgba(100,216,243,.7), rgba(245,146,176,.7), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url(https://cdn.pixabay.com/photo/2020/02/03/00/12/fiber-4814456_960_720.jpg) 0 0 / cover no-repeat;
+	background: linear-gradient(45deg, #EE396D, rgba(100,216,243,.7), rgba(245,146,176,.7), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url('/assets/img/hero-section/fiber-background.jpg') 0 0 / cover no-repeat;
 	-webkit-animation: gradientAnimation 20s ease infinite;
 	animation: gradientAnimation 20s ease infinite;
 }
@@ -1321,42 +1167,42 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Skills
+# App Section
 --------------------------------------------------------------*/
-.skills .content h3 {
+.app .content h3 {
   font-weight: 700;
   font-size: 32px;
   color: #EE396D;
   font-family: "Poppins", sans-serif;
 }
 
-.skills .content ul {
+.app .content ul {
   list-style: none;
   padding: 0;
 }
 
-.skills .content ul li {
+.app .content ul li {
   padding-bottom: 10px;
 }
 
-.skills .content ul i {
+.app .content ul i {
   font-size: 20px;
   padding-right: 4px;
   color: #47b2e4;
 }
 
-.skills .content p:last-child {
+.app .content p:last-child {
   margin-bottom: 0;
 }
 
-.skills .progress {
+.app .progress {
   height: 60px;
   display: block;
   background: none;
   border-radius: 0;
 }
 
-.skills .progress .skill {
+.app .progress .skill {
   padding: 0;
   margin: 0 0 6px 0;
   text-transform: uppercase;
@@ -1366,17 +1212,17 @@ section {
   color: #EE396D;
 }
 
-.skills .progress .skill .val {
+.app .progress .skill .val {
   float: right;
   font-style: normal;
 }
 
-.skills .progress-bar-wrap {
+.app .progress-bar-wrap {
   background: #e8edf5;
   height: 10px;
 }
 
-.skills .progress-bar {
+.app .progress-bar {
   width: 1px;
   height: 10px;
   transition: .9s;
