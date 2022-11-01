@@ -981,7 +981,84 @@ section {
   }
 }
 
+/*--------------------------------------------------------------
+# App Section
+--------------------------------------------------------------*/
+.app .content h3 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #EE396D;
+  font-family: "Poppins", sans-serif;
+}
 
+#youtube {
+  margin: 30px;
+  padding: 10px;
+}
+
+#mobile {
+    -webkit-animation: wobble-hor-bottom 1s 2s 10 both;
+            animation: wobble-hor-bottom 1s 2s 10 both;
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
@@ -1042,55 +1119,56 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
+# Wifihome section
 --------------------------------------------------------------*/
-.why-us .content {
+.wifihome .content {
   padding: 60px 100px 0 100px;
 }
 
-.why-us .content h3 {
+.wifihome .content h3 {
   font-weight: 400;
   font-size: 34px;
   color: #EE396D;
 }
 
-.why-us .content h4 {
+.wifihome .content h4 {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
 }
 
-.why-us .content p {
+.wifihome .content p {
   font-size: 15px;
   color: #848484;
 }
 
-.why-us .img {
+.wifihome .img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.why-us .accordion-list {
+
+.wifihome .accordion-list {
   padding: 0 100px 60px 100px;
 }
 
-.why-us .accordion-list ul {
+.wifihome .accordion-list ul {
   padding: 0;
   list-style: none;
 }
 
-.why-us .accordion-list li + li {
+.wifihome .accordion-list li + li {
   margin-top: 15px;
 }
 
-.why-us .accordion-list li {
+.wifihome .accordion-list li {
   padding: 20px;
   background: #fff;
   border-radius: 4px;
 }
 
-.why-us .accordion-list a {
+.wifihome .accordion-list a {
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -1102,132 +1180,71 @@ section {
   cursor: pointer;
 }
 
-.why-us .accordion-list span {
+.wifihome .accordion-list span {
   color: #47b2e4;
   font-weight: 600;
   font-size: 18px;
   padding-right: 10px;
 }
 
-.why-us .accordion-list i {
+.wifihome .accordion-list i {
   font-size: 24px;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.why-us .accordion-list p {
+.wifihome .accordion-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
 }
 
-.why-us .accordion-list .icon-show {
+.wifihome .accordion-list .icon-show {
   display: none;
 }
 
-.why-us .accordion-list a.collapsed {
+.wifihome .accordion-list a.collapsed {
   color: #343a40;
 }
 
-.why-us .accordion-list a.collapsed:hover {
+.wifihome .accordion-list a.collapsed:hover {
   color: #47b2e4;
 }
 
-.why-us .accordion-list a.collapsed .icon-show {
+.wifihome .accordion-list a.collapsed .icon-show {
   display: inline-block;
 }
 
-.why-us .accordion-list a.collapsed .icon-close {
+.wifihome .accordion-list a.collapsed .icon-close {
   display: none;
 }
 
 @media (max-width: 1024px) {
-  .why-us .content, .why-us .accordion-list {
+  .wifihome .content, .wifihome .accordion-list {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (max-width: 992px) {
-  .why-us .img {
+  .wifihome .img {
     min-height: 400px;
   }
-  .why-us .content {
+  .wifihome .content {
     padding-top: 30px;
   }
-  .why-us .accordion-list {
+  .wifihome .accordion-list {
     padding-bottom: 30px;
   }
 }
 
 @media (max-width: 575px) {
-  .why-us .img {
+  .wifihome .img {
     min-height: 200px;
   }
 }
 
-/*--------------------------------------------------------------
-# App Section
---------------------------------------------------------------*/
-.app .content h3 {
-  font-weight: 700;
-  font-size: 32px;
-  color: #EE396D;
-  font-family: "Poppins", sans-serif;
-}
 
-.app .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.app .content ul li {
-  padding-bottom: 10px;
-}
-
-.app .content ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #47b2e4;
-}
-
-.app .content p:last-child {
-  margin-bottom: 0;
-}
-
-.app .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.app .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #EE396D;
-}
-
-.app .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.app .progress-bar-wrap {
-  background: #e8edf5;
-  height: 10px;
-}
-
-.app .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: .9s;
-  background-color: #4668a2;
-}
 
 /*--------------------------------------------------------------
 # Services
@@ -1276,12 +1293,128 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Cta
+# Our Plans
 --------------------------------------------------------------*/
 .cta {
   background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
   padding: 120px 0;
+}
+
+.circles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+
 }
 
 .cta h3 {
